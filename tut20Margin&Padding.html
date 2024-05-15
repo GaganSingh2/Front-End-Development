@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;/* box sizing ke help sse humne jitna width diya hai uska li it ke andar hi padding aur margin laga skte hai buss*/
+            
+            /* humne by default 0 set kiya hai baad me andar jake humise override aur change kr skte hai */
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color:cornflowerblue;
+        }
+        .container{
+            background-color: aqua;
+            border: 2px solid green;
+            /* padding jo hota hai wo border or content ke bech ka distance hota hai */
+            padding: 20px; 
+
+            /* We can set margin/padding for top,bottom,right,left like this*/
+            /*padding-top: 20px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            padding-left: 50px;*/
+
+            /*THis is a shorthand property of padding same as margin
+            padding/margin = top,right, bottom,left*/
+            /* padding: 20px 25px 30px 50px;  */
+            
+            /*padding: y(top/bottom) x(left/right) */
+            /* padding: 20px 30px;   */
+
+            /* margin jo hota hai o border ke bahar do container ke bech ka distance hota hai */
+            margin: 10px;
+            border-radius: 22px;
+            width: 533px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>THis is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda explicabo, esse vitae repellendus aspernatur nam dolorum sapiente vel pariatur voluptates repudiandae sed illo earum laudantium.</p>
+    </div>
+    <div class="container">
+        <h3>THis is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda explicabo, esse vitae repellendus aspernatur nam dolorum sapiente vel pariatur voluptates repudiandae sed illo earum laudantium.</p>
+    </div>
+    <div class="container">
+        <h3>THis is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda explicabo, esse vitae repellendus aspernatur nam dolorum sapiente vel pariatur voluptates repudiandae sed illo earum laudantium.</p>
+    </div>
+</body>
+</html>
