@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="Backend.php">
+        <!--  div ak blockline element hai jo page ka pura line cover kr leta hai bhele hi humne kuch likha ho ya na aur next tag ko dusre line me bhejj deta hai -->
+      <!--  <div>
+             Name: <input type="text" name="myName"> yaha humne jo name me value dala hai uska use hum data ko pahachanane me karenge apne database me ya Backend
+        </div>
+        <div>
+            Role: <input type="text" name="myROle" >
+        </div>-->
+
+        <h2>THis is a Html Form Tutorials</h2>
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myROle" id="role">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <label for="date">Date of Joining</label>
+        <div>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+        <label for="eligible">Are you eligible in this post?</label>
+        
+            <input type="checkbox" name="myEligibility" id="eligible">
+        </div>
+        <br>
+
+        
+        <div>
+            Gender:
+            <label for="male">Male</label>
+            <input type="radio" name="mGender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="myGender" id="female">
+            <label for="others">Others</label>
+            <input type="radio" name="myGender" id="others">
+        </div>
+        <br>
+        <label for="textarea">Explain about your self</label>
+        <div>
+            <textarea name="myTextarea" id="textarea" cols="40" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="carcollection">My car collection's</label>
+            <select name="myCarcollection" id="carcollection">
+                <option value="Range Rover">Range Rover</option>
+                <option value="BMW">BMW</option>
+                <option value="Rolls Royals">Rolls Royals</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+            <input type="submit" value="Submit Now">
+        </div>
+    </form>
+</body>
+</html>
