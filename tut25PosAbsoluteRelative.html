@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position Absolute, Relative, Fixed and Sticky</title>
+    <style>
+        .container{
+            border: 2px solid rgb(51, 199, 10);
+            background-color: bisque;
+            height: 2000px;
+        }
+        /* CSS Position: static(default), absolute, relative, fixed,sticky */
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 140px;
+            margin: 2px;
+        }
+        #box3{
+            /* Relative: relative to its normal position(agr hume apne pahle jagah se box ke place ko change krna hai to relative krke kr skte hai aur jo purana uska place hai oo gap hi rahega koi dusra box waha nhi aa skta) */
+            /* position: relative; */
+            
+            /* absolute:absolute ke help se kisi box ke place ko change kr skte hai but o jo gap choega waha dusra box aa jayega */
+            /* position: absolute;
+            top: 34px;
+            left: 50; */
+            
+            /* fixed: fixed ke help se hhum kisi v box ko fix kr denge uske baad jab scroll karenge to o apna jagah change nhi karega */
+            /* position: fixed;
+            right: 4px; */
+           
+            /* sticky: sticky ka use see hum kisi nav bar ko apne heading ke roop me upper fix kr skte hai jo kabhi apne jaga ko chnage nhi krege */
+            position: sticky;
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
