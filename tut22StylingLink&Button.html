@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: aqua;
+            background-color: blue;
+        }
+        /* jo link visited hoga usse pe color change hoga */
+        a:visited{
+            background-color: blueviolet;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        .btn{
+            background-color: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+            
+
+        }
+    </style>
+</head>
+<body>
+     <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis similique minus non saepe impedit dolore! Saepe eveniet dicta magnam omnis animi qui dolore voluptates, libero expedita excepturi ut eligendi dolorem quibusdam aliquam perspiciatis commodi.</p>
+        <a href="https://en.wikipedia.org/wiki/Virat_Kohli" class="btn" target="_blank">Read More</a>
+        <button class="btn">Read More</button>
+     </div>
+</body>
+</html>
