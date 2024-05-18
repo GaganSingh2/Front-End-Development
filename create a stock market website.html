@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Stock Market Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            /* width: 1509px;
+            height: 1000px;
+            border: 2px solid red; */
+            background-color: #03A9F4;
+            color: white;
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 34px;
+            left: 56px;
+            /* border: 2px solid green; */
+
+        }
+
+        .mid {
+            display: block;
+            /* margin: 53px auto;
+            width: 64%; */
+            margin: 33px auto;
+            width: 54%;
+            /* border: 2px solid green; */
+
+
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 34px;
+            right: 5px;
+            /* border: 2px solid green; */
+        }
+         
+        /* left side styling */
+        .left img {
+
+            width: 100px;
+            padding: 10px;
+        }
+
+        .left div {
+            font-size: 25px;
+            line-height: 10px;
+            text-align: center;
+            cursor: pointer;
+            font: bolder;
+            color: rgb(18 215 171 / 97%);
+        }
+
+        .left div:hover {
+            color: cyan;
+        }
+         
+        /* mid side styling */
+        .nav {
+            display: inline-block;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style: none;
+            font-size: 20px;
+            font: bolder;
+        }
+
+        .nav li a {
+
+            padding: 20px 44px;
+            text-decoration: none;
+            color: rgb(18 215 171 / 97%);
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            color: aquamarine;
+            text-decoration: underline;
+        }
+
+        .nav li a:active {
+            color: rgb(29, 180, 230);
+        }
+         
+        /* right side styling */
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            /* margin: 33px 20px; */
+            /* padding: 10px 16px; */
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            border-radius: 12px;
+            font-size: 20px;
+            padding: 4px 14px;
+            margin: 0px 9px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: wheat;
+            background-color: gray;
+        }
+
+        .btn:active {
+            color: aquamarine;
+            background-color: magenta;
+        }
+
+        .in {
+            display: inline-block;
+            margin: 121px 70px;
+            padding: 12px;
+            /* text-decoration: underline; */
+        }
+
+        .int {
+            font-size: 42px;
+            /* font: bolder; */
+            line-height: 50px;
+            color: aquamarine;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+
+        .int:hover {
+            color: aqua;
+        }
+
+        .name {
+            position: absolute;
+            /* display: block; */
+            margin: -130px 71px;
+            padding: 17px;
+        }
+
+        #no {
+            text-decoration: underline;
+            font-size: 36px;
+            line-height: 40px;
+            color: aquamarine;
+            cursor: pointer;
+        }
+
+        #no:hover {
+            color: aqua;
+        }
+
+        .container {
+            position: absolute;
+            /* display: inline-block; */
+            margin: -46px 75px;
+            padding: 3px 25px;
+        }
+
+        #live {
+            font-size: 24px;
+        }
+
+        .Container2 {
+            border: 2px solid white;
+            margin: 94px 80px;
+            padding: 23px 70px;
+            width: 39%;
+            border-radius: 31px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            border: 2px solid black;
+            padding: 1px;
+            margin: 11px auto;
+            display: block;
+            width: 460px;
+            border-bottom: 9px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .Container2 button {
+            /* display: block; */
+            width: 45%;
+            margin: 12px 13px;
+        }
+
+        .Container2 h2 {
+            text-align: center;
+            color: cyan;
+        }
+
+        .form-group input:hover {
+            color: magenta;
+        }
+
+        .img {
+            display: inline-block;
+            position: absolute;
+            top: 172px;
+            right: 29px;
+            cursor: pointer;
+        }
+
+        .ph {
+            text-align: end;
+            font-size: 26px;
+            color: aqua;
+            cursor: pointer;
+        }
+
+        .ph:hover {
+            color: aquamarine;
+        }
+
+        .ph:active {
+            color: cornflowerblue;
+        }
+
+        .pawan {
+            text-align: end;
+            font-size: 31px;
+            color: turquoise;
+            cursor: pointer;
+        }
+
+        .pawan:hover {
+            color: cyan;
+        }
+
+        .pawan:active {
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="istockphoto-1313570804-1024x1024.jpg" alt="">
+            <div>MYCAN</div>
+            <!-- <h3>i am left div</h3> -->
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Full RoadMap</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <!-- <h3>i am mid div</h3> -->
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+            <!-- <h3>i am right div</h3> -->
+        </div>
+    </header>
+    <div class="in">
+        <div class="int">STOCK</div>
+        MARKET CLASSES FOR BEGINNERS
+    </div>
+    <div class="name">
+        <div id="no">MYCAN</div>
+        SPEAKER
+    </div>
+    <div class="container">
+        <div id="live">LIVE CLASSES</div>
+        <div id="date">20/08/2023</div>
+        <div id="time">10:00 AM - 11:00AM</div>
+    </div>
+    <div class="Container2">
+        <h2>Join the best class of learning the STOCK MARKETING </h2>
+        <form action="noaction.php" method="get">
+            <div class="form-group">
+                <input type="text" name="mytext" id="text" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text2" name="mytext2" id="text2" placeholder="Enter Your Gender" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="mynumber" id="number" placeholder="Enter Your Age" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="myemail" id="email" placeholder="Enter Your Email id" required>
+            </div>
+            <div class="form-group">
+                <input type="number2" name="mynumber2" id="number2" placeholder="Enter Your Phone number" required>
+            </div>
+            <button type="reset" class="btn">Reset</button>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="img">
+        <img src="istockphoto-1224196635-612x612.jpg" alt="error">
+        <div class="ph">Ph.no:-9128430010</div>
+        <div class="pawan">ONLY AND ONLY PAWAN</div>
+
+    </div>
+</body>
+
+</html>
