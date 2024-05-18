@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('gympage.jpg');
+            color: white;
+            width: 1500px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 110px;
+            padding: 18px 29px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 5px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        .left div:hover {
+            color: #4cc10e;
+        }
+
+        .mid {
+            display: block;
+            width: 42%;
+            margin: 26px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 45px;
+            top: 40px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 18px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: #4cc10e;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(144, 151, 151);
+            color: wheat;
+        }
+
+        .btn:active {
+            background-color: magenta;
+            color: aquamarine;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 160px 105px;
+            padding: 46px 70px;
+            width: 39%;
+            border-radius: 22px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 440px;
+            padding: 4px;
+            border: 2px solid black;
+            margin: 10px auto;
+            border-bottom: 9px;
+            font-size: 20px;
+            border-radius: 8px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: aqua;
+        }
+
+        .container button {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        .form-group input:hover {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="gyym logo.jpg" alt="">
+            <div>Gogo Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Jaipur now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Locality">
+            </div>
+           
+            <button class="btn">Submit</button>
+        </form>
+</body>
+
+</html>
