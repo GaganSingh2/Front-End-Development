@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive webpage</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .container{
+            font-size: 5px;
+            border: 2px solid red;
+            width: 100vh;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* em container ke font-size ke value ke sath multiply kr leta hai 5*4=20 */
+            /* font-size: 4em; */
+            /* padding me em container ka font size aur h1 ka font size ke sth multiply kr leta hai 3*4*5=60 */
+            /* padding: 3em; */
+
+        }
+        #second{
+            /* ye apne html me font size ke sath multiiply kr leta haI 20*5=100 */
+            /* font-size: 5rem;
+            padding: 5rem; */
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+    
+</body>
+</html>
